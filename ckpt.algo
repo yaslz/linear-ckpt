@@ -1,0 +1,16 @@
+ALGORITHM set_of_elements_
+VAR
+    array_tab1 : ARRAY_OF INTEGER[4] : [3, 1, 7, 9];
+    array_tab2 : ARRAY_OF INTEGER[5] : [2, 4, 1, 9, 3];
+    i , j ,s : INTEGER : 0;
+BEGIN
+    FOR i FROM 0 TO (tab1.length-1) STEP 1  DO
+    FOR i FROM 0 TO (tab2.length-1) STEP 1  DO
+        IF (tab1[i] = tab2[j]) THEN
+            s := tab1[i] + tab2[j];
+        END_IF
+    END_FOR
+    END_FOR
+    write (s);
+END
+
